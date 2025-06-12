@@ -4,6 +4,7 @@ import argparse
 import glob
 import os
 import pandas as pd
+import mlflow.sklearn
 from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import train_test_split
 
