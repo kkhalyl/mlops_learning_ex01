@@ -1,5 +1,4 @@
 # Import libraries
-import mlflow.sklearn
 import numpy as np
 import argparse
 import glob
@@ -11,7 +10,7 @@ from sklearn.model_selection import train_test_split
 # define functions
 def main(args):
     # TO DO: enable autologging
-    mlflow.sklearn.autolog()
+    mlflow.autolog()
 
     # read data
     df = get_csvs_df(args.training_data)
